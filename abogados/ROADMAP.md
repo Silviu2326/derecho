@@ -43,9 +43,9 @@
 
 | Página | Ruta | Roles con Acceso | Estado |
 |--------|------|-----------------|--------|
-| Dashboard Cobranza | `/cobranza/dashboard` | super_admin, socio, administrador, contador | ✅ Existe (renombrar) |
+| Dashboard Cobranza | `/cobranza/dashboard` | super_admin, socio, administrador, contador | ✅ Existe |
 | Proveedores | `/cobranza/proveedores` | super_admin, socio, administrador | ✅ CREADO |
-| Configuración | `/cobranza/config` | super_admin, administrador | 🆕 PENDIENTE
+| Configuración | `/cobranza/config` | super_admin, administrador | ✅ CREADO
 
 ---
 
@@ -59,17 +59,13 @@
 
 ---
 
-## M6 - Comunicaciones 🆕
+## M6 - Comunicaciones ✅
 
-| Página | Ruta | Roles con Acceso |
-|--------|------|-----------------|
-| Mensajes | `/comunicaciones/mensajes` | Todos los roles excepto cliente |
-| Juzgados | `/comunicaciones/juzgados` | super_admin, socio, abogado_senior, abogado_junior, paralegal |
-| Notificaciones | `/comunicaciones/notificaciones` | super_admin, socio, administrador |
-
-🆕 **CREAR:** `src/pages/comunicaciones/Mensajes.tsx` (mover desde pages/)
-🆕 **CREAR:** `src/pages/comunicaciones/Juzgados.tsx`
-🆕 **CREAR:** `src/pages/comunicaciones/Notificaciones.tsx`
+| Página | Ruta | Roles con Acceso | Estado |
+|--------|------|-----------------|--------|
+| Mensajes | `/comunicaciones/mensajes` | Todos los roles excepto cliente | 🆕 PENDIENTE (mover) |
+| Juzgados | `/comunicaciones/juzgados` | super_admin, socio, abogado_senior, abogado_junior, paralegal | ✅ CREADO |
+| Notificaciones | `/comunicaciones/notificaciones` | super_admin, socio, administrador | ✅ CREADO |
 
 ---
 
@@ -115,19 +111,14 @@
 
 ---
 
-## M11 - IA Legal (RAG) 🆕
+## M11 - IA Legal (RAG) ✅
 
-| Página | Ruta | Roles con Acceso |
-|--------|------|-----------------|
-| Chat IA | `/ia/chat` | super_admin, socio, abogado_senior |
-| Búsqueda Semántica | `/ia/busqueda` | super_admin, socio, abogado_senior, abogado_junior |
-| Generador Escritos | `/ia/generador` | super_admin, socio, abogado_senior, abogado_junior |
-| Análisis Contratos | `/ia/analisis` | super_admin, socio, abogado_senior |
-
-🆕 **CREAR:** `src/pages/ia/Chat.tsx`
-🆕 **CREAR:** `src/pages/ia/Busqueda.tsx`
-🆕 **CREAR:** `src/pages/ia/Generador.tsx`
-🆕 **CREAR:** `src/pages/ia/Analisis.tsx`
+| Página | Ruta | Roles con Acceso | Estado |
+|--------|------|-----------------|--------|
+| Chat IA | `/ia/chat` | super_admin, socio, abogado_senior | ✅ CREADO |
+| Búsqueda Semántica | `/ia/busqueda` | super_admin, socio, abogado_senior, abogado_junior | 🆕 PENDIENTE |
+| Generador Escritos | `/ia/generador` | super_admin, socio, abogado_senior, abogado_junior | ✅ CREADO |
+| Análisis Contratos | `/ia/analisis` | super_admin, socio, abogado_senior | 🆕 PENDIENTE |
 
 ---
 
@@ -178,8 +169,8 @@
 | Estado | Cantidad |
 |--------|----------|
 | ✅ Existe | 20 páginas |
-| ✅ Creado | 5 páginas |
-| 🆕 Crear | 10 páginas |
+| ✅ Creado | 10 páginas |
+| 🆕 Crear | 5 páginas |
 | **TOTAL** | **35 páginas** |
 
 ---
