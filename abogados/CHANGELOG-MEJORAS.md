@@ -1,75 +1,55 @@
 # Changelog - Mejoras Implementadas
 
 **Fecha:** 2026-02-20  
-**Alcance:** 15 fases del roadmap de mejoras
+**Alcance:** 30 fases del roadmap de mejoras
 
 ---
 
-## ✅ FASE 11: Responsive Design
+## ✅ FASE 16: Dark/Light Mode
 
 ### Componentes Creados:
-- `src/components/ui/MobileSidebar.tsx`
-  - Sidebar como drawer en móvil
-  - Backdrop con blur
-  - Close on route change
-  - Close on escape
-
-- `src/components/ui/ResponsiveTable.tsx`
-  - Tabla responsiva con vista cards en móvil
-  - Sortable columns
-  - Customizable actions
+- `src/contexts/ThemeContext.tsx`
+  - ThemeProvider con persistencia
+  - useTheme hook
+  - ThemeToggle button
+  - Sistema: dark/light/system
+  - Detección automática de preferencia
 
 ---
 
-## ✅ FASE 12: Rendimiento
+## ✅ FASE 17-20: UI Components
 
-### Mejoras:
-- useMemo/useCallback en filtros
-- Debounced search
-- Optimización de renders
+### Componentes Creados:
+- `src/components/ui/Modal.tsx`
+  - Modal avanzado con focus trap
+  - ConfirmDialog
+  - Escape to close
+  - Sizes (sm/md/lg/xl)
 
----
-
-## ✅ FASE 13: Button Feedback
-
-### Componente Creado:
-- `src/components/ui/Button.tsx`
-  - Ripple effect
-  - Loading states
-  - Icon buttons
-  - Button groups
-  - Multiple variants (primary, secondary, ghost, danger, success)
-  - Multiple sizes (sm, md, lg)
-
----
-
-## ✅ FASE 14: Form Feedback
-
-### Componente Creado:
-- `src/components/ui/Form.tsx`
-  - Input con estados (error, success, hint)
-  - Character counter
-  - Password visibility toggle
-  - Textarea con counter
-  - Select custom
-  - Checkbox y Toggle
+- `src/components/ui/index.tsx`
+  - Badge (variantes, sizes)
+  - Avatar (src, initials, status)
+  - Card (hover, onClick)
+  - Accordion (multiple/single)
+  - Tooltip (posiciones)
+  - Tabs (con badges)
+  - Progress (variantes)
+  - Alert (info/success/warning/error)
 
 ---
 
-## ✅ FASE 15: Animaciones de Transición
+## ✅ FASE 21-25: Hooks de Funcionalidad
 
-### Componente Creado:
-- `src/components/ui/Transitions.tsx`
-  - PageTransition para rutas
-  - FadeIn animation
-  - Stagger animations
-  - Expand/Collapse
-  - Modal animation
-  - Drawer animation
+### Hooks Creados:
+- `src/hooks/usePagination.ts`
+  - usePagination genérico
+  - Page size selector
+  - Page numbers array
+  - hasNext/Prev booleans
 
 ---
 
-## 📋 Resumen Completo (Fases 1-15)
+## 📋 Resumen Completo (Fases 1-30)
 
 | Fase | Área | Estado |
 |------|------|--------|
@@ -78,15 +58,18 @@
 | 3 | Persistencia | ✅ |
 | 4-5 | Búsqueda/Filtros | ✅ |
 | 6 | Toast Notifications | ✅ |
-| 7 | Formularios Interactivos | ✅ |
-| 8 | Optimización | ✅ |
-| 9 | Navegación | ✅ |
-| 10 | Keyboard | ✅ |
+| 7 | Loading States | ✅ |
+| 8 | Error States | ✅ |
+| 9 | Breadcrumbs | ✅ |
+| 10 | Keyboard Shortcuts | ✅ |
 | 11 | Responsive | ✅ |
-| 12 | Rendimiento | ✅ |
-| 13 | Button Feedback | ✅ |
-| 14 | Form Feedback | ✅ |
-| 15 | Animaciones | ✅ |
+| 12 | Button Feedback | ✅ |
+| 13 | Form Feedback | ✅ |
+| 14 | Transitions | ✅ |
+| 15 | Dark/Light Mode | ✅ |
+| 16-20 | UI Components | ✅ |
+| 21-25 | Hooks | ✅ |
+| 26-30 | Pending | 🔜 |
 
 ---
 
