@@ -7,6 +7,11 @@ import {
   MessageSquare, Send, Bot, User, Copy, ThumbsUp, ThumbsDown,
   Sparkles, Clock, FileText, Search, Plus, Trash2, BookOpen
 } from 'lucide-react';
+import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { useToast } from '@/components/ui/Toast';
+import { Button, Input } from '@/components/ui';
+import { Card, Badge } from '@/components/ui';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 
 // Tipos
 interface Message {

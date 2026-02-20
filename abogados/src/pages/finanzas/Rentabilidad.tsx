@@ -1,13 +1,20 @@
 // M2 - Finanzas: Rentabilidad
 // Análisis de rentabilidad por caso y abogado
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   TrendingUp, TrendingDown, DollarSign, Briefcase, Users,
   BarChart3, PieChart, Download, Filter, Calendar,
   ArrowUpRight, ArrowDownRight, Target
 } from 'lucide-react';
+import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { useDebounce } from '@/hooks/useDebounce';
+import { useToast } from '@/components/ui/Toast';
+import { Button, Input, Select } from '@/components/ui';
+import { Card, Badge } from '@/components/ui';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { StatsSkeleton, TableSkeleton } from '@/components/ui/Skeleton';
 
 // Datos mock
 const rentabilidadPorCasoMock = [
