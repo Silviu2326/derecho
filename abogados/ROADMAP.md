@@ -33,7 +33,7 @@
 | Facturación | `/finanzas/facturacion` | super_admin, socio, administrador, contador |
 | Contabilidad | `/finanzas/contabilidad` | super_admin, socio, administrador, contador |
 | Gastos | `/finanzas/gastos` | super_admin, socio, administrador, contador |
-| Rentabilidad | `/finanzas/rentabilidad` | super_admin, socio, administrador |
+| Rentabilidad | `/finanzas/rentabilidad` | super_admin, socio, administrador | ✅ CREADO |
 
 🆕 **CREAR:** `src/pages/finanzas/Rentabilidad.tsx`
 
@@ -116,7 +116,7 @@
 | Página | Ruta | Roles con Acceso | Estado |
 |--------|------|-----------------|--------|
 | Chat IA | `/ia/chat` | super_admin, socio, abogado_senior | ✅ CREADO |
-| Búsqueda Semántica | `/ia/busqueda` | super_admin, socio, abogado_senior, abogado_junior | 🆕 PENDIENTE |
+| Búsqueda Semántica | `/ia/busqueda` | super_admin, socio, abogado_senior, abogado_junior | ✅ CREADO | |
 | Generador Escritos | `/ia/generador` | super_admin, socio, abogado_senior, abogado_junior | ✅ CREADO |
 | Análisis Contratos | `/ia/analisis` | super_admin, socio, abogado_senior | 🆕 PENDIENTE |
 
